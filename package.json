@@ -1,0 +1,26 @@
+{
+  "name": "e-commerce",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "Mern E-Commerce",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon --watch backend --exec node --experimental-modules backend/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TelmaKn/E-Commerce.git"
+  },
+  "author": "Telma Kneeteman",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TelmaKn/E-Commerce/issues"
+  },
+  "homepage": "https://github.com/TelmaKn/E-Commerce#readme",
+  "dependencies": {
+    "express": "^4.17.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}

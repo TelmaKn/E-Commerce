@@ -6,7 +6,7 @@ import { useParams } from "react-router";
 
 const ProductScreen = (props) => {
   const { id } = useParams();
-  const product = data.products.find((x) => x._id === id);
+  const product = data.products.find((x) => Number(x._id) === Number(id));
   if (!product) {
     return <div>Product Not Found</div>;
   }
@@ -51,9 +51,8 @@ const ProductScreen = (props) => {
                     )}
                   </div>
                 </div>
-              </li>{" "}
+              </li>
               <li>
-                {" "}
                 <button className="primary block">Add</button>
               </li>
             </ul>
